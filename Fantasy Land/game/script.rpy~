@@ -1,0 +1,45 @@
+﻿# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define m = Character("Miki")
+image miki:
+    "miki1.png" with dissolve
+    pause  2.0
+    "mikic1.png" with dissolve
+    pause 4.0
+    repeat
+image mikiescape:
+    "mikic1.png"
+    xalign 0.1 yalign 0.01
+    linear 2.0 xalign 2.0
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bc1
+    show miki:
+        xalign 0.1 yalign 0.01
+    m "Hi, i'm Miki, and i'm a magical cat"
+    hide miki
+    
+    show mikiescape
+    m "Goodbye"
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+
+
+    # These display lines of dialogue.
+
+    
+
+    # This ends the game.
+
+    return
